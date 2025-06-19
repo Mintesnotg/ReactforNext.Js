@@ -23,7 +23,9 @@ export default function Board() {
     }
     return (
         <>
-
+           {/* <p>
+            Next player:    {XisNext ? "X" : "O"}
+           </p> */}
             <div className="board-row mt-2">
                 <Square value={squares[0]} Onsquareclicked={ ()=>handleclick(0)} />
                 <Square value={squares[1]} Onsquareclicked={ ()=>handleclick(1)} />
