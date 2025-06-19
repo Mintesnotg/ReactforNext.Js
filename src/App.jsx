@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import  {MyButton1,MyApp} from './components/button'
+import Board from './Tic-tac-toe'
 
 import ShooppingList from './components/list'
 import './App.css'
@@ -21,6 +22,7 @@ function App() {
         
          <ShooppingList/>
          <MyApp/>
+         <Board/>
     
       </div>
  
