@@ -7,7 +7,7 @@ import Board from './Tic-tac-toe'
 import ShooppingList from './components/list'
 import NameInput from './components/Input'
 import { Greetings } from './components/Input'
-import InputName2 from './components/Liftingup'
+// import InputName2 from './components/LiftingStateup'
 // import { AnotherInput } from './components/Liftingup'
 import './App.css'
 import ProductApp from './components/thinking_'
@@ -15,6 +15,8 @@ import ProductApp from './components/thinking_'
 import ParentComponent from './components/parent_child_data'
 
  import Parent from './components/parent_child'
+
+ import Form from './components/updatingobjects'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -36,6 +38,7 @@ function App() {
          <ShooppingList/>
          <MyApp/>
          <Board/>
+         <Form/>
          <ProductApp/>
          <Parent/>
       </div>

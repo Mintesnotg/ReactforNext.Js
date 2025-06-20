@@ -66,7 +66,7 @@ function ProductTable({ products ,filterText, inStockOnly }) {
   );
 }
 function Searchbar( { filterText, inStockOnly,onFilterTextChange,onInStockOnlyChange}) {
-  debugger;
+
   return (
     <form action="">
 
