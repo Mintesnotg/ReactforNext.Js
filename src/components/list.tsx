@@ -9,7 +9,7 @@ export default function ShoosppingList  () {
 
    const listItems= products.map(product=>
 
-     <li style={{color:product.isFruit ? 'magenta' :'darkgreen'}} key={product.id}>{product.title}</li>
+     <li  style={{color:product.isFruit ? 'magenta' :'darkgreen'}} key={product.id}>{product.title}</li>
    )
 
   return (

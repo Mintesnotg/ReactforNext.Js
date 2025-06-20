@@ -6,7 +6,7 @@ export  const MyButton1 = ()=>  {
     }
     return (
         <>
-          <button className="avatar"onClick={handleclick} > clicked {count} times</button>
+          <button className="avatar "onClick={handleclick} > clicked {count} times</button>
         </>
     )
 }

@@ -16,6 +16,10 @@ import ParentComponent from './components/parent_child_data'
 
  import Parent from './components/parent_child'
 
+ import List from './components/updatingarray'
+
+ import ToDoApp from './components/Todo'
+
  import Form from './components/updatingobjects'
 function App() {
   const [count, setCount] = useState(0)
@@ -25,12 +29,12 @@ function App() {
   return (
     <>
  
-      <div className="card">
+      <div className="card ">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
 
-        {isLogged && <MyButton1/>}
+        {/* {isLogged && <MyButton1/>}
          <NameInput name={name} onNameChange={setName}/>
 
          <Greetings name={name}/>
@@ -39,8 +43,10 @@ function App() {
          <MyApp/>
          <Board/>
          <Form/>
-         <ProductApp/>
-         <Parent/>
+         <ProductApp/> */}
+         {/* <Parent/> */}
+         <List/>
+         <ToDoApp/>
       </div>
  
     </>
