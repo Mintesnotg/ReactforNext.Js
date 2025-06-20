@@ -8,9 +8,9 @@ import ShooppingList from './components/list'
 import NameInput from './components/Input'
 import { Greetings } from './components/Input'
 import InputName2 from './components/Liftingup'
-import { AnotherInput } from './components/Liftingup'
+// import { AnotherInput } from './components/Liftingup'
 import './App.css'
-
+import ProductApp from './components/thinking_'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -26,13 +26,14 @@ function App() {
         {/* {isLogged ? (<MyButton1/>) :(<MyButton2/>)} */}
         {isLogged && <MyButton1/>}
          <NameInput name={name} onNameChange={setName}/>
-         <InputName2 name={name} OnInputChange={setValue} />
-         <AnotherInput value={name}/>
+         {/* <InputName2 name={name} OnInputChange={setValue} />
+         <AnotherInput value={name}/> */}
          <Greetings name={name}/>
 
          <ShooppingList/>
          <MyApp/>
          <Board/>
+         <ProductApp/>
     
       </div>
  

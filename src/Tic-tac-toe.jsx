@@ -12,8 +12,12 @@ export default function Board() {
 
     const [squares,setsquares]= useState(Array(9).fill(null))
     const [XisNext,setXisNext]= useState(true);
+
     function handleclick (i) {
-        debugger;
+        if (squares[i] || calculateWinner(squares)) {
+            return;
+        }
+
        const nextsquare= squares.slice()
         XisNext ?  nextsquare[i]="X"  : nextsquare[i]="O"
 
@@ -21,11 +25,22 @@ export default function Board() {
         setXisNext(!XisNext)
 
     }
+
+    const winner = calculateWinner(squares);
+    let gamestatus;
+
+    if (winner) {
+        gamestatus = 'Winner :' + winner;
+
+    } else {
+        gamestatus = 'Next Player ' + (XisNext ? 'X' : 'O')
+    }
     return (
         <>
            {/* <p>
             Next player:    {XisNext ? "X" : "O"}
            </p> */}
+           <div className="status">{gamestatus}</div>
             <div className="board-row mt-2">
                 <Square value={squares[0]} Onsquareclicked={ ()=>handleclick(0)} />
                 <Square value={squares[1]} Onsquareclicked={ ()=>handleclick(1)} />
@@ -44,4 +59,24 @@ export default function Board() {
 
         </>
     )
+}
+
+function calculateWinner(squares) {
+    const lines = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+    for (let i = 0; i < lines.length; i++) {
+        const [a, b, c] = lines[i];
+        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+            return squares[a];
+        }
+    }
+    return null;
 }
