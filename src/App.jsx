@@ -11,6 +11,8 @@ import InputName2 from './components/Liftingup'
 // import { AnotherInput } from './components/Liftingup'
 import './App.css'
 import ProductApp from './components/thinking_'
+
+ import Parent from './components/parent_child'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -23,18 +25,17 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        {/* {isLogged ? (<MyButton1/>) :(<MyButton2/>)} */}
+
         {isLogged && <MyButton1/>}
          <NameInput name={name} onNameChange={setName}/>
-         {/* <InputName2 name={name} OnInputChange={setValue} />
-         <AnotherInput value={name}/> */}
+
          <Greetings name={name}/>
 
          <ShooppingList/>
          <MyApp/>
          <Board/>
          <ProductApp/>
-    
+         <Parent/>
       </div>
  
     </>

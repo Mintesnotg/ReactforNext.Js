@@ -87,7 +87,7 @@ function Searchbar( { filterText, inStockOnly,onFilterTextChange,onInStockOnlyCh
 
 function FilterableProductTable({ products }) {
 
-debugger;
+
   const [filtertext,setfiltertext] =useState('');
   const [inStockOnly,setInStockOnly] = useState(false)  
   return (
