@@ -12,6 +12,8 @@ import InputName2 from './components/Liftingup'
 import './App.css'
 import ProductApp from './components/thinking_'
 
+import ParentComponent from './components/parent_child_data'
+
  import Parent from './components/parent_child'
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +32,7 @@ function App() {
          <NameInput name={name} onNameChange={setName}/>
 
          <Greetings name={name}/>
-
+         <ParentComponent/>
          <ShooppingList/>
          <MyApp/>
          <Board/>
