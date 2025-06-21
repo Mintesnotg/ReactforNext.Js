@@ -11,7 +11,7 @@ import { Greetings } from './components/Input'
 // import { AnotherInput } from './components/Liftingup'
 import './App.css'
 import ProductApp from './components/thinking_'
-
+import TodoApp2 from './components/Todo2'
 import ParentComponent from './components/parent_child_data'
 
  import Parent from './components/parent_child'
@@ -46,7 +46,7 @@ function App() {
          <ProductApp/> */}
          {/* <Parent/> */}
          <List/>
-         <ToDoApp/>
+         <TodoApp2/>
       </div>
  
     </>
