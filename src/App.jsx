@@ -17,10 +17,12 @@ import Form from './components/updatingobjects'
  import Parent from './components/parent_child'
 
 import List from './components/updatingarray'
-
+import Counter from './components/usingreducer'
 import ToDoApp from './components/Todo'
 import FormSubmit from './components/form'
+import ToggleTheam from './components/togglelight'
 
+import ToggleThemeGpt from './components/chatgptcode'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -48,6 +50,9 @@ function App() {
          <List/>
          <TodoApp2/>
          <FormSubmit />
+         <Counter/>
+         <ToggleTheam/>
+         <ToggleThemeGpt/>
       </div>
  
     </>
