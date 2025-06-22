@@ -13,14 +13,14 @@ import './App.css'
 import ProductApp from './components/thinking_'
 import TodoApp2 from './components/Todo2'
 import ParentComponent from './components/parent_child_data'
-
+import Form from './components/updatingobjects'
  import Parent from './components/parent_child'
 
- import List from './components/updatingarray'
+import List from './components/updatingarray'
 
- import ToDoApp from './components/Todo'
+import ToDoApp from './components/Todo'
+import FormSubmit from './components/form'
 
- import Form from './components/updatingobjects'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -47,6 +47,7 @@ function App() {
          {/* <Parent/> */}
          <List/>
          <TodoApp2/>
+         <FormSubmit />
       </div>
  
     </>
