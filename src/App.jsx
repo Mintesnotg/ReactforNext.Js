@@ -22,6 +22,8 @@ import ToDoApp from './components/Todo'
 import FormSubmit from './components/form'
 import ToggleTheam from './components/togglelight'
 
+import Counter2 from './components/Countercomp'
+
 import ToggleThemeGpt from './components/chatgptcode'
 function App() {
   const [count, setCount] = useState(0)
@@ -47,12 +49,13 @@ function App() {
          <Form/>
          <ProductApp/> */}
          {/* <Parent/> */}
-         <List/>
+         {/* <List/>
          <TodoApp2/>
          <FormSubmit />
          <Counter/>
          <ToggleTheam/>
-         <ToggleThemeGpt/>
+         <ToggleThemeGpt/> */}
+         <Counter2/>
       </div>
  
     </>

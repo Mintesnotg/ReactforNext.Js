@@ -1,7 +1,4 @@
 import { useReducer } from "react";
-
-
-
 const initialstate = { count: 0 };
 function reducer(state, action) {
    debugger
@@ -25,7 +22,7 @@ export default function Counter() {
     return (
 
         <div>
-            <h2 className="text-xl">Count: {state.count}</h2>
+            <h2 className="text-xl">Count: {state?.count}</h2>
             <button onClick={() => dispatch({ type: 'increment' })}>+</button>
             <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
             <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
