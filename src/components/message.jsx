@@ -25,7 +25,7 @@ export default function Chat() {
 
   return (
     <>
-    
+
       <input
         disabled={isSending}
         value={text}
