@@ -26,6 +26,8 @@ import Counter2 from './components/Countercomp'
 
 import ToggleThemeGpt from './components/chatgptcode'
 import Chat from './components/message'
+
+import ChatApp from './components/chatapp2'
 // import FocusInput from './components/Ref'
 function App() {
   const [count, setCount] = useState(0)
@@ -59,8 +61,8 @@ function App() {
         */}
          {/* <FocusInput/>  */}
          {/* <Counter2/> */}
-         <Chat/>
-     
+         {/* <Chat/> */}
+          <ChatApp/>
       </div>
  
     </>
