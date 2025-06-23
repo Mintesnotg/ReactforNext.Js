@@ -25,6 +25,8 @@ import ToggleTheam from './components/togglelight'
 import Counter2 from './components/Countercomp'
 
 import ToggleThemeGpt from './components/chatgptcode'
+import Chat from './components/message'
+// import FocusInput from './components/Ref'
 function App() {
   const [count, setCount] = useState(0)
   const [name,setName]=useState("")
@@ -34,9 +36,9 @@ function App() {
     <>
  
       <div className="card ">
-        <button onClick={() => setCount((count) => count + 1)}>
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button> */}
 
         {/* {isLogged && <MyButton1/>}
          <NameInput name={name} onNameChange={setName}/>
@@ -54,8 +56,11 @@ function App() {
          <FormSubmit />
          <Counter/>
          <ToggleTheam/>
-         <ToggleThemeGpt/> */}
-         <Counter2/>
+        */}
+         {/* <FocusInput/>  */}
+         {/* <Counter2/> */}
+         <Chat/>
+     
       </div>
  
     </>
